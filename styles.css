@@ -39,7 +39,10 @@ header {
     min-width: 320px;
     height: 334px;
     align-items: center;
+    background: linear-gradient(207.8deg, var(--warm-black) 16.69%, var(--bitcoin-orange) 100%);
 }
+
+
 header img {
     width: 150px;
     height: 24px;
@@ -52,6 +55,17 @@ header img {
     height: 218px;
     margin-top: 40px;
     text-align: center;
-    
-
+}
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--title-container p {
+     margin-top: 25px;
+     font-size: 1.4rem;
+     font-weight: 500;
+     line-height: 1.8rem;    /* Viene hacer el interlineado */
+     color: var(--soft-orange);
 }
