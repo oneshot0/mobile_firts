@@ -258,7 +258,7 @@ main {
   border-radius: 15px;
 }
 .commission-table--container div:nth-child(2n) {
- justify-content: center;
+  justify-content: center;
 }
 .commission-table--item .table__price {
   color: var(--warm-black);
@@ -273,11 +273,10 @@ main {
 }
 .commission-table--item {
   display: flex;
-  align-items: center;  
+  align-items: center;
   border: 1px solid var(--off-white);
   padding-left: 10px;
 }
-
 
 .commission-table--item p {
   margin: 0;
@@ -297,4 +296,42 @@ main {
   background-color: var(--soft-blue);
   border-radius: 8px;
 }
-
+/* Empezamos con la parte de beneficios */
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 20px;
+  background-color: var(--warm-black);
+}
+.product-detail--batata-logo {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: -10px;
+  left: calc(50% - 20px);
+  background-image: url(./assets/imgs/logo.svg);
+}
+.product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+.product-detail--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
