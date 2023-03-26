@@ -448,10 +448,10 @@ main {
   position: relative;
   scroll-snap-align: center ;  /* Intenta centrar el elemento al momento de hacer scroll */
   width: 70%;
-  min-width: 230px;
+  min-width: 190px;
   max-width: 300px;
   height: 250px;
-  margin: 50px 16px 0;
+  margin: 50px 12px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -515,3 +515,5 @@ main {
   cursor: pointer;
   outline: none;
 }
+
+/* FOOTER */
