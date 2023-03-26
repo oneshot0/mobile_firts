@@ -102,6 +102,7 @@ header img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 /* MAIN  CONTENT */
 main {
   width: 100%;
@@ -227,107 +228,73 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.currency-table--date p {
-  padding-top: 16px;
-}
-
-/* TABLA DE COMISIONES */
-.exchange-tablesContainer {
-  margin-top: 40px;
+.currency-table--date {
+  text-align: center;
+  width: 240px;
+  height: 30px;
   margin: 0 auto;
-  width: 50%;
-  align-self: center;
-  min-width: 110px;
-  max-width: 320px;
-  text-align: left;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+}
+.currency-table--date p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+  font-weight: 300;
 }
 
-.tableContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+/* TABLA DE COMISIONES CSS GRID */
+.commission-table--container {
+  width: 90%;
+  min-width: 320px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--just-white);
+  border-radius: 15px;
+}
+.commission-table--container div:nth-child(2n) {
+ justify-content: center;
+}
+.commission-table--item .table__price {
+  color: var(--warm-black);
 }
 
-.tableContainer h3 {
+.main-commission-table .commission-table--title {
+  margin-bottom: 15px;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 2.3rem;
   color: var(--secondary-blue);
-  margin-left: 12px;
-  margin-bottom: 12px;
 }
-
-.grid-tableContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-radius: 8px;
-  font-family: "Inter", sans-serif;
-  grid-gap: 1.5px;
-  justify-content: center;
-}
-
-.grid-tableContainer div {
-  padding: 10px 12px;
+.commission-table--item {
   display: flex;
-  background-color: var(--just-white);
-  height: 60px;
-  align-items: center;
+  align-items: center;  
+  border: 1px solid var(--off-white);
+  padding-left: 10px;
 }
 
-.grid-tableContainer div:nth-child(1) {
-  border-top-left-radius: 10px;
-}
 
-.grid-tableContainer div:nth-child(2) {
-  border-top-right-radius: 10px;
-}
-
-.grid-tableContainer div:nth-child(7) {
-  border-bottom-left-radius: 10px;
-}
-
-.grid-tableContainer div:nth-child(8) {
-  border-bottom-right-radius: 10px;
-}
-
-.grid-tableContainer div:nth-child(2n) {
-  justify-content: center;
-}
-
-.grid-tableContainer div h4 {
+.commission-table--item p {
+  margin: 0;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
-  color: #b5b0ac;
+  color: var(--grey);
 }
 
-.grid-tableContainer div h5 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.7rem;
-  color: #757575;
-}
-
-.table-updateDate {
-  background-color: var(--soft-orange);
-  color: var(--warm-black);
-  padding: 8px;
+.commission-table--date {
   text-align: center;
-  margin-top: 16px;
+  width: 240px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-blue);
   border-radius: 8px;
-  width: 90%;
-  align-self: center;
 }
 
-.table-updateDate p {
-  font-size: 1.2em;
-  margin: 0;
-  font-weight: 400;
-  line-height: 1.45em;
-}
-
-.table-updateDate span {
-  font-size: 1.2em;
-  font-weight: 700;
-  line-height: 1.45em;
-}
